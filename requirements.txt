@@ -1,0 +1,11 @@
+streamlit>=1.40.0
+langchain>=0.2.0
+langchain-groq>=0.1.5
+langchain-community>=0.2.0
+langchain-text-splitters>=0.2.0
+chromadb>=0.5.0
+pypdf>=4.0.0
+sentence-transformers>=2.2.0
+transformers>=4.40.0
+torch>=2.2.0
+python-dotenv>=1.0.0
