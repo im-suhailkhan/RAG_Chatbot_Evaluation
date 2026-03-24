@@ -17,3 +17,7 @@ It answers questions based on a PDF document (like a resume) and provides automa
 ```bash
 git clone https://github.com/your-username/your-repo.git
 cd your-repo
+
+## Demo Screenshot:
+
+<img width="1252" height="835" alt="image" src="https://github.com/user-attachments/assets/0c82095b-b54a-4098-ac59-2a15f45025b7" />
