@@ -33,7 +33,7 @@ for message in st.session_state.messages:
 
 st.sidebar.header("RAG Document")
 
-pdf_path_input = st.sidebar.text_input("PDF path", value="./reflexion.pdf")
+pdf_path_input = st.sidebar.text_input("PDF path", value="./resume.pdf")
 uploaded_pdf = st.sidebar.file_uploader("Or upload a PDF", type=["pdf"])
 
 pdf_hash: str
@@ -85,6 +85,7 @@ def get_vectorstore(_pdf_hash: str, _pdf_path: str):
 
     return vectorstore
 
+vectorstore = get_vectorstore(pdf_hash, pdf_path)
 
 prompt = st.chat_input("Pass your prompt here")
 
@@ -97,7 +98,7 @@ if prompt:
         st.error("Missing `GROQ_API_KEY`. Set it in your environment or create a local `.env` file.")
         st.stop()
 
-    model = "llama3-8b-8192"
+    model = "llama-3.1-8b-instant"
     groq_chat = ChatGroq(groq_api_key=groq_api_key, model_name=model)
 
     try:
