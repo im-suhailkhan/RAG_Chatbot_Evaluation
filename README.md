@@ -1,4 +1,4 @@
-# 📄 RAG Chatbot with Groq & Streamlit
+# 📄 RAG Chatbot with Groq, Streamlit and LLM Judge as evaluator
 
 A **Retrieval-Augmented Generation (RAG)** chatbot built with Streamlit, LangChain, and Groq.  
 It answers questions based on a PDF document (like a resume) and provides automatic evaluation of answer quality.
@@ -17,3 +17,4 @@ It answers questions based on a PDF document (like a resume) and provides automa
 ```bash
 git clone https://github.com/your-username/your-repo.git
 cd your-repo
+
